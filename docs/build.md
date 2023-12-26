@@ -12,7 +12,7 @@ needed to be moved out.
 - ```git clone https://github.com/jamie0walton/pymscada-process.git```
 - ```cd pymscada-process```
 - ```pdm init```
-  - venv -- depends on your OS, if you have the option, venv
+  - venv
   - installable library -- yes
   - project name -- pymscada
   - version -- 0.0.1
@@ -23,4 +23,8 @@ needed to be moved out.
   - email -- jamie@walton.net.nz
   - python -- >=3.9  although I am setting up in 3.11. importlib choice
 - ```pdm venv create``` if you needed to use a venv outside the project to install
+- ```pdm add pymscada```
+- ```pdm build```
+- ```pdm publish```
+
 
