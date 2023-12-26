@@ -12,17 +12,17 @@ needed to be moved out.
 - ```git clone https://github.com/jamie0walton/pymscada-process.git```
 - ```cd pymscada-process```
 - ```pdm init```
-  - venv
+  - /usr/bin/python3.11 (3.11) -- prompts for creating the venv
   - installable library -- yes
   - project name -- pymscada
   - version -- 0.0.1
   - description -- Shared tag value SCADA with python backup and Angular UI
   - pdm-backend
-  - licence -- MIT
+  - licence -- GPL-3.0-or-later
   - Author Name -- Jamie Walton
   - email -- jamie@walton.net.nz
   - python -- >=3.9  although I am setting up in 3.11. importlib choice
-- ```pdm venv create``` if you needed to use a venv outside the project to install
+- ```pdm add -dG test pytest pytest-asyncio pytest-cov flake8 flake8-docstrings```
 - ```pdm add pymscada```
 - ```pdm build```
 - ```pdm publish```
